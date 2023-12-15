@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Card</title>
+  <!-- Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card" id="birthdayCard">
+    <div class="outside">
+      <div class="front">
+        <h1>Happy Birthday Miju</h1>
+        <div class="cake">
+          <div class="top-layer"></div>
+          <div class="middle-layer"></div>
+          <div class="bottom-layer"></div>
+          <div class="candle"></div>
+        </div>
+        <button class="open-button" onclick="openCard()">Open</button>
+      </div>
+      <div class="back">
+        <div class="grid-container">
+            <!-- Placeholder for grid content -->
+            <!-- You can add more divs with the class "grid-item" as needed -->
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/jonathan.jpg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Happy Birthday, Miju! 
+                      Almost to the final stretch in CODA!
+                       -Jonathan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/georgetownCupcake.jpg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Happy Birthday Queen Raisin</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/claudia.jpeg">
+                  </div>
+                  <div class="flip-card-back"> 
+                    <p>Happy Birthday, Miju!! Thank you for being born and thank you to your mom as well. I’m super super grateful for our friendship ❤
+                      -Claudia</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/andrea.jpeg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>You are the worst neighbor and friend. I regretfully look forward to our chats and hangouts in TDP. -Chinese Italian Man </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/seedless1.png">
+
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="./pics/ziping.png">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/groupMer.jpg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>i have deep regards for you -mer</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/seedless3.png">
+
+                  </div>
+                  <div class="flip-card-back">
+                    <p>happy birthday miju, i am so glad i met you because you are incredibly sweet, beautiful and kind woman. i hope you have a wonderful birthday because u deserve it and i hope our friendship grows even more -Momina</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/seedless4.png">
+
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Happy Birthday Miju! I hope you have an awesome birthday and a great year! 
+                      -Victor</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/museum.jpg">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Happy Birthday Seedless Raisin</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/seedless2.png">
+
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Happy Birthday Queen</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/study1.jpg">
+
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="./pics/study2.jpg">
+
+                  </div>
+                </div>
+              </div>
+              
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./pics/queen.jpeg">
+
+                  </div>
+                  <div class="flip-card-back">
+                    <img src="./pics/birthdayMiju.jpeg">
+
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        <button class="close-button" onclick="closeCard()">Close</button>
+      </div>
+    </div>
+    <div class="inside">
+      <p>Wishing you a very happy birthday filled with love and laughter</p>
+      <h1>&#127873;</h1>
+      <div class="placeholder">
+      </div>
+
+    </div>
+
+    <script>
+      function openCard() {
+        var card = document.getElementById('birthdayCard');
+        card.style.transform = 'rotate(-5deg)';
+        card.querySelector('.outside').style.transform = 'rotateY(-180deg)';
+      }
+
+      function closeCard() {
+        var card = document.getElementById('birthdayCard');
+        card.style.transform = 'none';
+        card.querySelector('.outside').style.transform = 'none';
+      }
+    </script>
+  </body>
+</html>
